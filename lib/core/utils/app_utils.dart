@@ -1,45 +1,5 @@
 part of "utils.dart";
 
-/// default loading
-const Align defaultLoading = Align(child: CustomCircularProgressIndicator());
-
-// const Image vocabularyImage = Image(
-//   image: AssetImage(ImageConstants.vocabularyDefault),
-//   color: Color(0xFFFF2525),
-// );
-
-/// book logo
-const Align bookImage = Align(
-  child: Text(
-    "📗",
-    textAlign: TextAlign.center,
-    style: TextStyle(fontSize: 56),
-  ),
-);
-
-const Align movieImage = Align(
-  child: Text(
-    "🎥",
-    textAlign: TextAlign.center,
-    style: TextStyle(fontSize: 56),
-  ),
-);
-
-const Align podcastImage = Align(
-  child: Text(
-    "🎧",
-    textAlign: TextAlign.center,
-    style: TextStyle(fontSize: 56),
-  ),
-);
-
-int? findChildIndexCallbackKeyInt(Key key) {
-  if (key is ObjectKey && key.value != null && key.value is int) {
-    return key.value! as int;
-  }
-  return null;
-}
-
 sealed class AppUtils {
   AppUtils._();
 
