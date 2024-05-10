@@ -1,4 +1,3 @@
-import "package:core_module/core/utils/utils.dart";
 import "package:core_module/core/widgets/loading/circular_progress_indicator.dart";
 import "package:flutter/foundation.dart";
 import "package:flutter/material.dart";
@@ -19,7 +18,7 @@ class CustomLoadingButton extends StatelessWidget {
   Widget build(BuildContext context) => ElevatedButton(
         onPressed: onPressed,
         child: AnimatedSwitcher(
-          duration: kAnimationDuration,
+          duration: const Duration(milliseconds: 300),
           child: isLoading
               ? const CustomCircularProgressIndicator(
                   size: 24,

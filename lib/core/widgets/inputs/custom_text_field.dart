@@ -1,8 +1,8 @@
 import "package:core_module/core/extension/extension.dart";
-import "package:core_module/core/utils/utils.dart";
 import "package:flutter/foundation.dart";
 import "package:flutter/material.dart";
 import "package:flutter/services.dart";
+import "package:gap/gap.dart";
 
 typedef Validator = String? Function(String?);
 typedef OnChanged = void Function(String);
@@ -84,7 +84,7 @@ class CustomTextField extends StatelessWidget {
               titleText ?? "",
               style: context.textTheme.headlineSmall,
             ),
-          if (titleText != null) AppUtils.kGap8,
+          if (titleText != null) const Gap(8),
           TextFormField(
             key: key,
             style: context.textStyle.regularBody,

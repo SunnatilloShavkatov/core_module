@@ -26,7 +26,7 @@ class ThemeCustomShapes extends ThemeExtension<ThemeCustomShapes> {
   static final ThemeCustomShapes light = ThemeCustomShapes(
     chooseOptionDecoration: BoxDecoration(
       color: colorLightScheme.surface,
-      borderRadius: AppUtils.kBorderRadius12,
+      borderRadius: const BorderRadius.all(Radius.circular(12)),
       boxShadow: const <BoxShadow>[
         BoxShadow(
           color: Color.fromRGBO(0, 0, 0, 0.1),
@@ -104,7 +104,7 @@ class ThemeCustomShapes extends ThemeExtension<ThemeCustomShapes> {
   static final ThemeCustomShapes dark = ThemeCustomShapes(
     chooseOptionDecoration: BoxDecoration(
       color: colorDarkScheme.surface,
-      borderRadius: AppUtils.kBorderRadius12,
+      borderRadius: const BorderRadius.all(Radius.circular(12)),
       boxShadow: const <BoxShadow>[
         BoxShadow(
           color: Color.fromRGBO(255, 255, 255, 0.1),

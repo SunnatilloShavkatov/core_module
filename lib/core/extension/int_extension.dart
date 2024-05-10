@@ -1,5 +1,10 @@
 part of "extension.dart";
 
+/// Get screen media.
+final MediaQueryData media =
+// ignore: deprecated_member_use
+    MediaQueryData.fromView(WidgetsBinding.instance.window);
+
 extension IntX on int {
   bool get isPaymentAccess => this == 100;
 }

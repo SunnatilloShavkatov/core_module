@@ -47,7 +47,7 @@ final ThemeData lightTheme = ThemeData(
   canvasColor: colorLightScheme.surface,
   shadowColor: const Color(0xFFE7E7E7),
   scrollbarTheme: const ScrollbarThemeData(
-    radius: AppUtils.kRadius12,
+    radius: Radius.circular(12),
     interactive: true,
     thickness: MaterialStatePropertyAll<double>(4),
     thumbVisibility: MaterialStatePropertyAll<bool>(false),
@@ -182,27 +182,27 @@ final ThemeData lightTheme = ThemeData(
     fillColor: colorLightScheme.surface,
     contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
     border: OutlineInputBorder(
-      borderRadius: AppUtils.kBorderRadius12,
+      borderRadius: const BorderRadius.all(Radius.circular(12)),
       borderSide: BorderSide(color: colorLightScheme.outline),
     ),
     enabledBorder: OutlineInputBorder(
-      borderRadius: AppUtils.kBorderRadius12,
+      borderRadius: const BorderRadius.all(Radius.circular(12)),
       borderSide: BorderSide(color: colorLightScheme.outline),
     ),
     focusedBorder: OutlineInputBorder(
-      borderRadius: AppUtils.kBorderRadius12,
+      borderRadius: const BorderRadius.all(Radius.circular(12)),
       borderSide: BorderSide(color: colorLightScheme.primary),
     ),
     focusedErrorBorder: OutlineInputBorder(
-      borderRadius: AppUtils.kBorderRadius12,
+      borderRadius: const BorderRadius.all(Radius.circular(12)),
       borderSide: BorderSide(color: colorLightScheme.error),
     ),
     disabledBorder: OutlineInputBorder(
-      borderRadius: AppUtils.kBorderRadius12,
+      borderRadius: const BorderRadius.all(Radius.circular(12)),
       borderSide: BorderSide(color: colorLightScheme.outline),
     ),
     errorBorder: OutlineInputBorder(
-      borderRadius: AppUtils.kBorderRadius12,
+      borderRadius: const BorderRadius.all(Radius.circular(12)),
       borderSide: BorderSide(color: colorLightScheme.error),
     ),
   ),
@@ -425,7 +425,7 @@ final ThemeData darkTheme = ThemeData(
   canvasColor: colorDarkScheme.surface,
   shadowColor: const Color(0xFFE7E7E7),
   scrollbarTheme: const ScrollbarThemeData(
-    radius: AppUtils.kRadius12,
+    radius: Radius.circular(12),
     interactive: true,
     thickness: MaterialStatePropertyAll<double>(4),
     thumbVisibility: MaterialStatePropertyAll<bool>(false),
@@ -552,27 +552,27 @@ final ThemeData darkTheme = ThemeData(
     fillColor: colorLightScheme.surface,
     contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
     border: OutlineInputBorder(
-      borderRadius: AppUtils.kBorderRadius12,
+      borderRadius: const BorderRadius.all(Radius.circular(12)),
       borderSide: BorderSide(color: colorDarkScheme.outline),
     ),
     enabledBorder: OutlineInputBorder(
-      borderRadius: AppUtils.kBorderRadius12,
+      borderRadius: const BorderRadius.all(Radius.circular(12)),
       borderSide: BorderSide(color: colorDarkScheme.outline),
     ),
     focusedBorder: OutlineInputBorder(
-      borderRadius: AppUtils.kBorderRadius12,
+      borderRadius: const BorderRadius.all(Radius.circular(12)),
       borderSide: BorderSide(color: colorDarkScheme.primary),
     ),
     focusedErrorBorder: OutlineInputBorder(
-      borderRadius: AppUtils.kBorderRadius12,
+      borderRadius: const BorderRadius.all(Radius.circular(12)),
       borderSide: BorderSide(color: colorDarkScheme.error),
     ),
     disabledBorder: OutlineInputBorder(
-      borderRadius: AppUtils.kBorderRadius12,
+      borderRadius: const BorderRadius.all(Radius.circular(12)),
       borderSide: BorderSide(color: colorDarkScheme.outline),
     ),
     errorBorder: OutlineInputBorder(
-      borderRadius: AppUtils.kBorderRadius12,
+      borderRadius: const BorderRadius.all(Radius.circular(12)),
       borderSide: BorderSide(color: colorDarkScheme.error),
     ),
   ),

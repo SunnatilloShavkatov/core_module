@@ -1,4 +1,3 @@
-import "package:core_module/core/utils/utils.dart";
 import "package:flutter/foundation.dart";
 import "package:flutter/material.dart";
 
@@ -22,7 +21,7 @@ class AnimationLinearProgress extends StatelessWidget {
         curve: Curves.easeInOut,
         tween: Tween<double>(begin: 0, end: value),
         builder: (_, double value, __) => LinearProgressIndicator(
-          borderRadius: AppUtils.kBorderRadius4,
+          borderRadius: const BorderRadius.all(Radius.circular(4)),
           value: value,
           minHeight: minHeight,
           backgroundColor: backgroundColor,

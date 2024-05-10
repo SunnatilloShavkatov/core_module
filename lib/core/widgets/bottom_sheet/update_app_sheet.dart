@@ -1,8 +1,8 @@
 import "package:core_module/core/extension/extension.dart";
-import "package:core_module/core/utils/utils.dart";
 import "package:core_module/core/widgets/bottom_sheet/custom_bottom_sheet.dart";
 import "package:flutter/foundation.dart";
 import "package:flutter/material.dart";
+import "package:gap/gap.dart";
 import "package:url_launcher/url_launcher.dart";
 
 class AppUpdateBottomSheetWidget extends StatelessWidget {
@@ -19,7 +19,7 @@ class AppUpdateBottomSheetWidget extends StatelessWidget {
   Widget build(BuildContext context) => PopScope(
         canPop: false,
         child: SafeArea(
-          minimum: AppUtils.kPaddingAll16,
+          minimum: const EdgeInsets.all(16),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             mainAxisAlignment: MainAxisAlignment.center,
@@ -30,7 +30,7 @@ class AppUpdateBottomSheetWidget extends StatelessWidget {
                 style: context.textTheme.labelLarge,
                 textAlign: TextAlign.center,
               ),
-              AppUtils.kGap8,
+              const Gap(8),
               Text(
                 context.tr(
                   "update_app",
@@ -39,13 +39,13 @@ class AppUpdateBottomSheetWidget extends StatelessWidget {
                 style: context.textTheme.headlineMedium,
                 textAlign: TextAlign.center,
               ),
-              AppUtils.kGap16,
+              const Gap(16),
               ElevatedButton(
                 onPressed: onTap,
                 child: Text(context.tr("update")),
               ),
               if (!isForceUpdate) ...<Widget>[
-                AppUtils.kGap8,
+                const Gap(8),
                 OutlinedButton(
                   onPressed: () {
                     Navigator.of(context).pop();

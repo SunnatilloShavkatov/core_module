@@ -1,6 +1,6 @@
 import "package:core_module/core/extension/extension.dart";
-import "package:core_module/core/utils/utils.dart";
 import "package:flutter/material.dart";
+import "package:gap/gap.dart";
 
 void showErrorSnackBar(
   BuildContext context, {
@@ -26,7 +26,7 @@ void showErrorSnackBar(
               color: context.colorScheme.onError,
             ),
           ),
-          AppUtils.kGap4,
+          const Gap(4),
           Text(
             message,
             maxLines: 2,
