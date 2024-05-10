@@ -2,6 +2,7 @@ import "dart:async";
 import "dart:io";
 import "dart:math" as math;
 
+import "package:core_module/core/app_options.dart";
 import "package:core_module/core/l10n/app_localizations_setup.dart";
 import "package:core_module/core/theme/themes.dart";
 import "package:core_module/core/utils/utils.dart";

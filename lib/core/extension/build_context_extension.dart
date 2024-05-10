@@ -39,28 +39,28 @@ extension BuildContextExt on BuildContext {
   }) =>
       AppLocalizations.of(this)!.translate(key, namedArgs: namedArgs);
 
-  // AppOptions get options => AppOptions.of(this);
-  //
-  // void setLocale(Locale locale) {
-  //   AppOptions.update(
-  //     this,
-  //     AppOptions.of(this).copyWith(locale: locale),
-  //   );
-  // }
+  AppOptions get options => AppOptions.of(this);
 
-  // void setSound(Sound sound) {
-  //   AppOptions.update(
-  //     this,
-  //     AppOptions.of(this).copyWith(sound: sound),
-  //   );
-  // }
-  //
-  // void setThemeMode(ThemeMode themeMode) {
-  //   AppOptions.update(
-  //     this,
-  //     AppOptions.of(this).copyWith(themeMode: themeMode),
-  //   );
-  // }
+  void setLocale(Locale locale) {
+    AppOptions.update(
+      this,
+      AppOptions.of(this).copyWith(locale: locale),
+    );
+  }
+
+  void setSound(Sound sound) {
+    AppOptions.update(
+      this,
+      AppOptions.of(this).copyWith(sound: sound),
+    );
+  }
+
+  void setThemeMode(ThemeMode themeMode) {
+    AppOptions.update(
+      this,
+      AppOptions.of(this).copyWith(themeMode: themeMode),
+    );
+  }
 
 // WiredashController get wireDash => Wiredash.of(this)!;
 }
