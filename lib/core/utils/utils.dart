@@ -11,6 +11,7 @@ import "package:flutter/foundation.dart";
 import "package:flutter/material.dart";
 import "package:flutter/services.dart";
 import "package:gap/gap.dart";
+import "package:vibration/vibration.dart";
 
 part "app_utils.dart";
 

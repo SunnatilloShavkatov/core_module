@@ -189,11 +189,11 @@ Color progressBackgroundColor(int progress) => progress >= 80
     ? const Color.fromRGBO(141, 213, 79, 0.2)
     : const Color.fromRGBO(255, 162, 0, 0.2);
 
-// Future<void> vibrate() async {
-//   if (await Vibration.hasVibrator() ?? false) {
-//     await Vibration.vibrate(duration: 150);
-//   }
-// }
+Future<void> vibrate() async {
+  if (await Vibration.hasVibrator() ?? false) {
+    await Vibration.vibrate(duration: 150);
+  }
+}
 
 List<String> valueToList(String a) {
   List<String> t = <String>[];
