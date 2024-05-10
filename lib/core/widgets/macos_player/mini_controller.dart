@@ -352,20 +352,20 @@ class MiniController extends ValueNotifier<VideoPlayerValue> {
 }
 
 /// Widget that displays the video controlled by [controller].
-class VideoPlayer extends StatefulWidget {
+class MacVideoPlayer extends StatefulWidget {
   /// Uses the given [controller] for all video rendered in this widget.
-  const VideoPlayer(this.controller, {super.key});
+  const MacVideoPlayer(this.controller, {super.key});
 
   /// The [MiniController] responsible for the video being rendered in
   /// this widget.
   final MiniController controller;
 
   @override
-  State<VideoPlayer> createState() => _VideoPlayerState();
+  State<MacVideoPlayer> createState() => _MacVideoPlayerState();
 }
 
-class _VideoPlayerState extends State<VideoPlayer> {
-  _VideoPlayerState() {
+class _MacVideoPlayerState extends State<MacVideoPlayer> {
+  _MacVideoPlayerState() {
     _listener = () {
       final int newTextureId = widget.controller.textureId;
       if (newTextureId != _textureId) {
@@ -390,7 +390,7 @@ class _VideoPlayerState extends State<VideoPlayer> {
   }
 
   @override
-  void didUpdateWidget(VideoPlayer oldWidget) {
+  void didUpdateWidget(MacVideoPlayer oldWidget) {
     super.didUpdateWidget(oldWidget);
     oldWidget.controller.removeListener(_listener);
     _textureId = widget.controller.textureId;
