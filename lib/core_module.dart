@@ -23,6 +23,7 @@ export "core/widgets/inputs/custom_password_text_field.dart";
 export "core/widgets/inputs/custom_text_field.dart";
 export "core/widgets/loading/circular_progress_indicator.dart";
 export "core/widgets/loading/modal_progress_hud.dart";
+export "core/widgets/local_hero/local_hero.dart";
 export "core/widgets/macos_player/mini_controller.dart";
 export "core/widgets/native_splash/flutter_native_splash.dart";
 export "core/widgets/sliver_appbar_delegate.dart";
