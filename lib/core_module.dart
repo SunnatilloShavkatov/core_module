@@ -7,7 +7,7 @@ export "core/error/server_error.dart";
 export "core/extension/extension.dart";
 export "core/l10n/app_localizations_setup.dart";
 export "core/theme/themes.dart";
-export "core/utils/utils.dart";
+export "core/utils/app_utils.dart";
 export "core/widgets/animations/animated_flip_counter.dart";
 export "core/widgets/animations/animation_linear_progress.dart";
 export "core/widgets/bottom_sheet/choose_image_sheet.dart";
